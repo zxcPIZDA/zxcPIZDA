@@ -1,23 +1,30 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace zxcPIZDA
 {
-    static class Extension
+    static class Extansion
     {
-public static T[] Print<T>(this T[] array)
+        public static T[] Print<T>(this T[] array)
+        {
+            foreach (var item in array)
             {
-                foreach (var item in array)
-                    Console.Write(item + "\t");
-                Console.WriteLine();
-                return array;
+                Console.Write(item + "\t");
+
+
             }
-public static T Print<T>(this T item)
-            {
-                Console.WriteLine(item);
-                return item;
-            }
+            Console.WriteLine();
+            return array;
+        }
+        public static T Print<T>(this T item)
+        {
+            Console.WriteLine(item);
+            return item;
+        }
+    }
 }

@@ -1,1 +1,2 @@
-﻿Console.WriteLine("zxczxczxc");
+﻿using zxcPIZDA;
+Programm1.main();
